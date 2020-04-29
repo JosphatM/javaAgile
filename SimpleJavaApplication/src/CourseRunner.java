@@ -5,10 +5,12 @@ public class CourseRunner {
 		
 		//create a new course
 		
-	    Course java = new Course("Java", 5, 1200.00);
+	    Course java = new Course("Java", 5, 1200.00, 0);
 	    	    
 	    System.out.println(java.getName() + " Course runs for " + java.getNumberOfDays() + " days and costs $" + java.getPrice());
 	    
-	    System.out.println("The discounted price is : " + (100-java.getDiscountedCost(15))/100 * java.getPrice());
+	    System.out.println("The discounted price is : " + java.getDiscountedCost());
+	    
+	    System.out.println("There are " + Course.getNumberOfCoursesCreated());
 	}
 }

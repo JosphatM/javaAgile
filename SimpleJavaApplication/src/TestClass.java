@@ -8,12 +8,18 @@ public class TestClass {
 		 * Create a separate test class with a main method that creates an instance of the class and exercises its methods. 
 		 *  		
 		*/
-		Course2 testClass = new Course2(0);
 		
-		testClass.setMaximumParticipants(35);
+		Course testClass = new Course("Java", 5, 1200.00,0);
 		
-		System.out.println(testClass.getMaximumParticipants());
+		testClass.setMaximumParticipants(20);
+		
+		System.out.println("Welcome to " + testClass.getCourseGiver() + ". " + "Here are the details of the course: " );
+		
+		System.out.println("There are " + testClass.getMaximumParticipants() + " participants of this course.");
+		
+		System.out.println("The cost per head of the course will be " + "$" + testClass.getPrice()/testClass.getMaximumParticipants());
+		
 	}
+	
 
 }
- 

@@ -48,6 +48,11 @@ public class Course2 {
 			
 			
 	}
+
+	public void setPrice(int i) {
+		// TODO Auto-generated method stub
+		
+	}
 		
 		
 }
